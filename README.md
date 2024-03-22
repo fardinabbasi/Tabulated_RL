@@ -1,1 +1,1 @@
-# Markov Decision Process
+# Tabulated Reinforcement Learning
