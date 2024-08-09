@@ -41,3 +41,12 @@ Training and test results of a **Q-learning agent** with the 2 following configu
 | --- | --- | --- |
 | Fixed | <img src="./doc/qtrain_fixed.png"> | <img src="./doc/qtest_fixed.png"> |
 | Decaying | <img src="./doc/qtrain_decay.png"> | <img src="./doc/qtest_decay.png"> |
+
+The regret is calculated using the following expression:
+$$L_t = \mathbb{E} \left[ \sum_{\tau=1}^{t} \left( V^* - Q(a_\tau) \right) \right]$$
+
+*where*:
+- $\mathbb{E}$ denotes the expectation.
+- $\sum_{\tau=1}^{t}$ represents the summation over time steps from 1 to t.
+- $V^*$ is the optimal value function.
+- $Q(a_\tau)$ is the action-value function for action $a_\tau$ at time $\tau$.
