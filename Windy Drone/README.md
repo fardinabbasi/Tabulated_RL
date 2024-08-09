@@ -67,4 +67,21 @@ Training and test results of a **SARSA agent** with the following configuration 
 | --- | --- |
 | <img src="./doc/sarsa_train.png"> | <img src="./doc/sarsa_test.png"> |
 
-## ## Tree backup n-step
+## Tree backup n-step
+The pseudocode for the Q-Learning algorithm is as follows:
+
+<img src="./doc/psd_ntree.png" width="495" height="452">
+
+Training and test results of a **Tree backup n-step agent** with the 3 following configurations are depicted below.
+* n = 1
+  * $\alpha = 0.1, \gamma = 0.9$ 
+* n = 2
+  * $\alpha = 0.1, \gamma = 0.9$
+* n = 3
+  * $\alpha = 0.2, \gamma = 0.9$
+ 
+| n | Training Reward | Test Reward |
+| --- | --- | --- |
+| **1** | <img src="./doc/1tree_train.png"> | <img src="./doc/1tree_test.png"> |
+| **2** | <img src="./doc/2tree_train.png"> | <img src="./doc/2tree_test.png"> |
+| **3** | <img src="./doc/3tree_train.png"> | <img src="./doc/3tree_test.png"> |
