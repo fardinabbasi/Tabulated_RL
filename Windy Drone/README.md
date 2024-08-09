@@ -33,14 +33,16 @@ The pseudocode for the Q-Learning algorithm is as follows:
 
 Training and test results of a **Q-learning agent** with the 2 following configurations are depicted below.
 * α=0.1
-  * An <ins>exponential decay</ins> of epsilon with a rate of 0.999
+  * An <ins>exponential decay</ins> of epsilon with a rate of 0.999 with the starting value of 0.9
+  * Discount Factor $\gamma = 0.9$
 * α=0.1, which decays with a rate of 0.99
-  * An <ins>exponential decay</ins> for epsilon with a rate of 0.99
+  * An <ins>exponential decay</ins> for epsilon with a rate of 0.99 with the starting value of 0.9
+  * Discount Factor $\gamma = 0.9$
 
 | α | Training Reward | Test Reward |
 | --- | --- | --- |
-| Fixed | <img src="./doc/qtrain_fixed.png"> | <img src="./doc/qtest_fixed.png"> |
-| Decaying | <img src="./doc/qtrain_decay.png"> | <img src="./doc/qtest_decay.png"> |
+| **Fixed** | <img src="./doc/qtrain_fixed.png"> | <img src="./doc/qtest_fixed.png"> |
+| **Decaying** | <img src="./doc/qtrain_decay.png"> | <img src="./doc/qtest_decay.png"> |
 
 The regret is calculated using the following expression:
 $$L_t = \mathbb{E} \left[ \sum_{\tau=1}^{t} \left( V^* - Q(a_\tau) \right) \right]$$
@@ -50,3 +52,19 @@ $$L_t = \mathbb{E} \left[ \sum_{\tau=1}^{t} \left( V^* - Q(a_\tau) \right) \righ
 - $\sum_{\tau=1}^{t}$ represents the summation over time steps from 1 to t.
 - $V^*$ is the optimal value function.
 - $Q(a_\tau)$ is the action-value function for action $a_\tau$ at time $\tau$.
+
+## SARSA
+The pseudocode for the SARSA algorithm is as follows:
+
+<img src="./doc/psd_sarsa.png">
+
+Training and test results of a **SARSA agent** with the following configuration are depicted below.
+* α=0.1
+* An <ins>exponential decay</ins> for epsilon with a rate of 0.99 with the starting value of 0.9
+* Discount Factor $\gamma = 0.9$
+
+| Training Reward | Test Reward |
+| --- | --- |
+| <img src="./doc/sarsa_train.png"> | <img src="./doc/sarsa_test.png"> |
+
+## ## Tree backup n-step
