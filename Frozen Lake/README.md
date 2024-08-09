@@ -4,7 +4,7 @@ This repository contains an implementation of the Q-learning algorithm from scra
 ## Q-Learning Implementation
 The pseudocode for the Q-Learning algorithm is as follows:
 
-<img src="/doc/qlearning_psdcode.png">
+<img src="./doc/qlearning_psdcode.png">
 
 Here's the revised version with improved grammar and clarity:
 
@@ -69,5 +69,17 @@ The results of running a random agent are depicted below for comparison.
 
 | Reward Plot | Video |
 | --- | --- |
-| <img src="/plot/random_reward.png"> | <img src="/doc/random.gif"> |
+| <img src="./doc/random_reward.png"> | <img src="./doc/random.gif"> |
 
+### Q-Learninng Agent
+Training results of a Q-Learning policy in the frozen-lake environment with *is_slippery=False* is depicted below:
+
+| Reward Plot | Video |
+| --- | --- |
+| <img src="./doc/qlearning_reward.png" width="576" height="455"> | <img src="./doc/Q_learning.gif"> |
+
+## Course Description
+- **Course**: Intelligent Systems [ECE 218]
+- **Semester**: Fall 2023
+- **Institution:** [School of Electrical & Computer Engineering](https://ece.ut.ac.ir/en/), [College of Engineering](https://eng.ut.ac.ir/en), [University of Tehran](https://ut.ac.ir/en)
+- **Instructor:** Dr. Reshad Hosseini
