@@ -19,3 +19,10 @@ The drone also has two additional attributes: a **battery** and a **health bar**
   * If the battery level drops <ins>below 5%</ins>, the episode is **truncated**, and the drone must return to the starting point for recharging.
 * As for its health bar, the drone starts with <ins>100% health</ins> and loses health upon hitting trees, following a normal distribution with a **mean of 0.2** and a **standard deviation of 0.1**.
   * If the health bar drops <ins>below 15%</ins>, the episode is **truncated**, and the drone must return to the starting point.
+
+A sample rendering of the environment is shown below.
+
+<img src="./doc/env.png">
+The following results were generated using `seed=456`.
+
+## Q-Learning
