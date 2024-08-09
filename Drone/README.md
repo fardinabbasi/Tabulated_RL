@@ -1,6 +1,6 @@
 # Drone
-In this repository, an RL environment called `Drone` is implemented **from scratch**. Additionally, multiple tabular RL algorithms, including **Q-learning**, **SARSA**, **n-step Tree Backup**, **Policy Iteration**, and **Monte Carlo**, have been tested on it.
-## Drone Environment
+In this repository, an RL environment called `Windy Drone` is implemented **from scratch**. Additionally, multiple tabular RL algorithms, including **Q-learning**, **SARSA**, **n-step Tree Backup**, **Policy Iteration**, and **Monte Carlo**, have been tested on it.
+## Windy Drone Environment
 This environment is a **6×6 gridworld** where a drone starts at a specific position and must reach the destination point without hitting obstacles.
 The starting point is **randomly** chosen from one of the two sets of candidate positions, and the destination point is **randomly** chosen from the other set:
 ```python
@@ -23,6 +23,9 @@ The drone also has two additional attributes: a **battery** and a **health bar**
 A sample rendering of the environment is shown below.
 
 <img src="./doc/env.png">
-The following results were generated using `seed=456`.
+The following results were generated using *seed=456*.
 
 ## Q-Learning
+The pseudocode for the Q-Learning algorithm is as follows:
+
+<img src="./doc/psd_qlearning.png">
