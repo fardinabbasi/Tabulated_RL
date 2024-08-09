@@ -23,9 +23,21 @@ The drone also has two additional attributes: a **battery** and a **health bar**
 A sample rendering of the environment is shown below.
 
 <img src="./doc/env.png">
+
 The following results were generated using *seed=456*.
 
 ## Q-Learning
 The pseudocode for the Q-Learning algorithm is as follows:
 
 <img src="./doc/psd_qlearning.png">
+
+Training and test results of a **Q-learning agent** with the 2 following configurations are depicted below.
+* α=0.1
+  * An <ins>exponential decay</ins> of epsilon with a rate of 0.999
+* α=0.1, which decays with a rate of 0.99
+  * An <ins>exponential decay</ins> for epsilon with a rate of 0.99
+
+| α | Training Reward | Test Reward |
+| --- | --- | --- |
+| Fixed | <img src="./doc/qtrain_fixed.png"> | <img src="./doc/qtest_fixed.png"> |
+| Decaying | <img src="./doc/qtrain_decay.png"> | <img src="./doc/qtest_decay.png"> |
